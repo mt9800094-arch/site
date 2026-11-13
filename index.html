@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سيلين | بوتيك الملابس الداخلية</title>
+<meta name="description" content="بوتيك ملابس داخلية بدانتيل وساتان وقطن، بمقاسات متنوعة وتوصيل في عبوة محايدة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{--accent:#5A1A2C;--ink:#2B0F18;--bg:#F1E9E6;--blush:#E3C6C1;--gold:#B08A5E;--muted:#4F3540;--line:#C9B3AE}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input{font-family:inherit}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:32px}
+
+.notice{background:var(--ink);color:var(--bg);font-size:14px;text-align:center;padding:10px 16px}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:24px}
+.logo{font-family:Amiri,serif;font-size:38px;font-weight:700;color:var(--accent);line-height:1}
+nav{display:flex;flex-wrap:wrap;gap:28px;font-size:15px;font-weight:500}
+.cartbtn{display:flex;align-items:center;gap:10px;background:transparent;border:1px solid var(--line);border-radius:999px;padding:10px 20px;color:var(--ink);font-size:15px;min-height:44px}
+.badge{background:var(--accent);color:#fff;border-radius:999px;min-width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;padding:0 6px}
+
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-block:40px 72px}
+.hero-text{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.eyebrow{font-size:14px;letter-spacing:.06em;color:var(--accent);font-weight:600}
+.hero h1{font-family:Amiri,serif;font-weight:700;font-size:clamp(40px,6vw,68px);line-height:1.2;text-wrap:balance}
+.rule{height:2px;width:120px;background:var(--gold);transform-origin:right center}
+.hero p{margin:0;font-size:18px;max-width:500px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:14px 32px;border-radius:999px;font-weight:600;border:1px solid var(--accent);transition:transform .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-line{color:var(--accent)}
+.art{flex:1 1 380px;min-width:0;max-width:520px;width:100%;aspect-ratio:1/1.05;position:relative;margin-inline:auto}
+.art div{position:absolute}
+
+.marq-wrap{background:var(--accent);color:var(--bg);overflow:hidden;padding:18px 0;direction:ltr}
+.marq{display:flex;width:max-content;font-family:Amiri,serif;font-size:24px;white-space:nowrap}
+.marq span{padding:0 28px}
+
+section.block{padding-block:88px 24px;display:flex;flex-direction:column;gap:32px}
+h2{font-family:Amiri,serif;font-size:44px;line-height:1.3}
+.colls{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.coll{border-radius:28px;padding:36px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.coll:hover{transform:translateY(-6px)}
+.coll>*{position:relative}
+.coll .deco{position:absolute;top:-28px;left:-28px;width:140px;height:140px}
+.coll h3{font-family:Amiri,serif;font-size:32px}
+
+.shop-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:8px 22px;font-size:15px;font-weight:500;min-height:44px;transition:background-color .3s,color .3s}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px}
+.card{display:flex;flex-direction:column;gap:14px;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.card:hover{transform:translateY(-8px)}
+.tilebox{overflow:hidden;border-radius:22px}
+.tile{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .tile{transform:scale(1.04)}
+.shape{width:46%;aspect-ratio:1/1.2}
+.cat{font-size:13px;color:var(--accent);font-weight:600}
+.card h3{font-size:18px;font-weight:600;line-height:1.5}
+.note{font-size:14px;color:#5C4450}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+.add{background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:8px 20px;font-size:14px;font-weight:600;min-height:44px}
+
+.fit{background:var(--blush);padding:80px 0;margin-top:48px}
+.fit .wrap{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.fit-text{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.fit-text p{margin:0;font-size:17px;color:var(--muted);max-width:460px}
+.tbl{flex:1 1 420px;min-width:0;overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--bg);border-radius:20px;overflow:hidden}
+th{background:var(--ink);color:var(--bg);padding:14px 18px;text-align:right}
+td{padding:14px 18px;border-bottom:1px solid #D9C5C0}
+tr:last-child td{border-bottom:0}
+
+.join{padding-block:88px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.join p{margin:0;font-size:17px;color:var(--muted);max-width:520px}
+.form{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%;max-width:520px}
+.form input{flex:1 1 260px;min-width:0;min-height:48px;border:1px solid var(--line);background:#FBF6F4;border-radius:999px;padding:0 22px;font-size:16px;color:var(--ink)}
+.form button{background:var(--accent);color:#fff;border:0;border-radius:999px;padding:0 32px;min-height:48px;font-size:16px;font-weight:600}
+.thanks{color:var(--accent);font-weight:600}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+footer{border-top:1px solid #D9C5C0}
+footer .wrap{padding-block:48px;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+footer .col{display:flex;flex-direction:column;gap:6px;font-size:15px}
+footer small{font-size:14px;color:#5C4450;max-width:360px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes floatB{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(14px) rotate(8deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes arch{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+.up{animation:fadeUp .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
+.fl-a{animation:floatA 6s ease-in-out infinite}
+.fl-b{animation:floatB 8s ease-in-out infinite}
+.ring{animation:spin 40s linear infinite}
+.reveal{animation:arch 1.4s cubic-bezier(.2,.7,.2,1) .2s both}
+.rule{animation:grow 1.2s cubic-bezier(.2,.7,.2,1) .6s both}
+.marq{animation:marq 32s linear infinite}
+@media (max-width:600px){.wrap{padding-inline:20px}h2{font-size:34px}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="notice">للبالغين فقط (+18) · توصيل في عبوة محايدة تمامًا · الدفع عند الاستلام</div>
+
+<header>
+<div class="wrap">
+<a href="#top" class="logo up">سيلين</a>
+<nav class="up d1" aria-label="التنقل الرئيسي">
+<a href="#collections">المجموعات</a>
+<a href="#shop">المتجر</a>
+<a href="#fit">دليل المقاس</a>
+<a href="#join">النشرة</a>
+</nav>
+<button type="button" class="cartbtn up d2" aria-label="السلة">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+<span>السلة</span><span class="badge" id="cartCount">0</span>
+</button>
+</div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+<div class="hero-text">
+<span class="eyebrow up">مجموعة الموسم الجديد</span>
+<h1 class="up d1">أناقة تشبهك،<br>وراحة تدوم طول اليوم</h1>
+<div class="rule"></div>
+<p class="up d2">دانتيل ناعم وأقمشة قطن وساتان بقصّات مريحة، بمقاسات من S إلى 3XL، ونصائح واضحة لاختيار المقاس المناسب.</p>
+<div class="actions up d3">
+<a href="#shop" class="btn btn-fill">تسوّقي الآن</a>
+<a href="#fit" class="btn btn-line">دليل المقاس</a>
+</div>
+</div>
+<div class="art" aria-hidden="true">
+<div class="reveal" style="inset:6% 12% 0 12%;background:var(--blush);border-radius:999px 999px 28px 28px"></div>
+<div class="reveal" style="inset:26% 30% 12% 30%;background:var(--accent);border-radius:999px 999px 20px 20px"></div>
+<div class="fl-a" style="top:2%;right:2%;width:22%;aspect-ratio:1/1;background:var(--gold);border-radius:999px"></div>
+<div class="fl-b" style="bottom:6%;left:0;width:26%;aspect-ratio:1/1;background:var(--ink);border-radius:30% 70% 60% 40%"></div>
+<div class="ring" style="top:30%;left:-2%;width:30%;aspect-ratio:1/1;border:2px dashed var(--gold);border-radius:999px"></div>
+</div>
+</section>
+
+<section class="marq-wrap" aria-label="مميزات">
+<div class="marq">
+<span dir="rtl">أقمشة ناعمة على البشرة</span><span aria-hidden="true">·</span>
+<span dir="rtl">مقاسات متنوعة</span><span aria-hidden="true">·</span>
+<span dir="rtl">تغليف أنيق وسري</span><span aria-hidden="true">·</span>
+<span dir="rtl">استبدال سهل</span><span aria-hidden="true">·</span>
+<span dir="rtl">أقمشة ناعمة على البشرة</span><span aria-hidden="true">·</span>
+<span dir="rtl">مقاسات متنوعة</span><span aria-hidden="true">·</span>
+<span dir="rtl">تغليف أنيق وسري</span><span aria-hidden="true">·</span>
+<span dir="rtl">استبدال سهل</span><span aria-hidden="true">·</span>
+</div>
+</section>
+
+<section id="collections" class="wrap block">
+<h2>المجموعات</h2>
+<div class="colls">
+<a href="#shop" class="coll" style="background:var(--blush)" data-filter="lace">
+<div class="deco fl-a" aria-hidden="true" style="background:var(--accent);border-radius:999px"></div>
+<span style="font-size:14px;font-weight:600">٠٤ قطع</span>
+<div><h3>دانتيل كلاسيك</h3><span style="color:var(--muted)">أطقم أنيقة بتفاصيل ناعمة</span></div>
+</a>
+<a href="#shop" class="coll" style="background:var(--ink);color:var(--bg)" data-filter="satin">
+<div class="deco fl-b" aria-hidden="true" style="background:var(--gold);border-radius:30% 70% 60% 40%"></div>
+<span style="font-size:14px;font-weight:600">٠٣ قطع</span>
+<div><h3>ساتان ليلي</h3><span style="color:#D9C5C0">قمصان نوم وأرواب بملمس حريري</span></div>
+</a>
+<a href="#shop" class="coll" style="background:#D6D0C4" data-filter="cotton">
+<div class="deco fl-a" aria-hidden="true" style="background:var(--ink);border-radius:28px;transform:rotate(18deg)"></div>
+<span style="font-size:14px;font-weight:600">٠٣ قطع</span>
+<div><h3>قطن يومي</h3><span style="color:var(--muted)">راحة خفيفة للارتداء المستمر</span></div>
+</a>
+</div>
+</section>
+
+<section id="shop" class="wrap block" style="padding-block:72px 40px">
+<div class="shop-head">
+<h2>المتجر</h2>
+<div class="filters" id="filters" role="group" aria-label="تصفية حسب القسم"></div>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="fit" class="fit">
+<div class="wrap">
+<div class="fit-text">
+<h2>اختاري مقاسك بثقة</h2>
+<p>قيسي محيط الصدر ومحيط الخصر بشريط قياس مرن، ثم قارني بالجدول. لو بين مقاسين، اختاري الأكبر للراحة.</p>
+</div>
+<div class="tbl">
+<table>
+<thead><tr><th>المقاس</th><th>الصدر (سم)</th><th>الخصر (سم)</th></tr></thead>
+<tbody>
+<tr><td><strong>S</strong></td><td>[٨٤–٨٨]</td><td>[٦٤–٦٨]</td></tr>
+<tr><td><strong>M</strong></td><td>[٨٨–٩٢]</td><td>[٦٨–٧٢]</td></tr>
+<tr><td><strong>L</strong></td><td>[٩٢–٩٦]</td><td>[٧٢–٧٦]</td></tr>
+<tr><td><strong>XL</strong></td><td>[٩٦–١٠٠]</td><td>[٧٦–٨٠]</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="join" class="wrap join">
+<h2>كوني أول من يعرف</h2>
+<p>اشتركي لتصلك المجموعات الجديدة والعروض الخاصة. بدون إزعاج، ويمكنك الإلغاء في أي وقت.</p>
+<form class="form" id="joinForm">
+<label for="email" class="sr">بريدك الإلكتروني</label>
+<input id="email" type="email" required placeholder="بريدك الإلكتروني">
+<button type="submit">اشتراك</button>
+</form>
+<p class="thanks" id="thanks" hidden>شكرًا لاشتراكك!</p>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="col"><span class="logo">سيلين</span><small>بوتيك ملابس داخلية للبالغين. جميع الحقوق محفوظة.</small></div>
+<div class="col"><strong>تواصل معنا</strong><span>[رقم واتساب المتجر]</span><span>[البريد الإلكتروني]</span></div>
+<div class="col"><strong>السياسات</strong><a href="#top">الشحن والتوصيل</a><a href="#top">الاستبدال والاسترجاع</a></div>
+</div>
+</footer>
+
+<script>
+(function () {
+  var cats = [
+    { id: 'all', label: 'الكل' },
+    { id: 'lace', label: 'دانتيل' },
+    { id: 'satin', label: 'ساتان' },
+    { id: 'cotton', label: 'قطن' }
+  ];
+  var products = [
+    { cat: 'lace', name: 'طقم دانتيل بتطريز ناعم', note: 'قطعتان، بطانة قطنية مريحة', bg: '#E3C6C1', fg: '#5A1A2C', r: '999px 999px 24px 24px' },
+    { cat: 'satin', name: 'قميص نوم ساتان قصير', note: 'ملمس حريري، أكتاف قابلة للتعديل', bg: '#2B0F18', fg: '#B08A5E', r: '50%' },
+    { cat: 'cotton', name: 'طقم قطن يومي', note: 'قطن مسامي يسمح بالتهوية', bg: '#D6D0C4', fg: '#2B0F18', r: '24px' },
+    { cat: 'satin', name: 'روب ساتان طويل', note: 'حزام عريض وجيوب جانبية', bg: '#C9B3AE', fg: '#2B0F18', r: '999px 24px 999px 24px' },
+    { cat: 'lace', name: 'بودي دانتيل بدون حمالات', note: 'قصّة مرنة تثبت بدون ضغط', bg: '#EAD3CF', fg: '#7A3B2E', r: '50% 50% 18px 18px' },
+    { cat: 'cotton', name: 'بيجامة قطن بقصّة مريحة', note: 'قطعتان للنوم اليومي', bg: '#CBD5D2', fg: '#1F4A45', r: '24px 999px 24px 999px' },
+    { cat: 'lace', name: 'قميص نوم دانتيل طويل', note: 'فتحة جانبية وأكمام شفافة', bg: '#2B0F18', fg: '#E3C6C1', r: '999px' },
+    { cat: 'satin', name: 'طقم ساتان بنطلون وقميص', note: 'قطعتان بتطريز على الحواف', bg: '#E3C6C1', fg: '#2B0F18', r: '30% 70% 60% 40%' }
+  ];
+  var state = { cat: 'all', cart: 0 };
+  var labelOf = {};
+  cats.forEach(function (c) { labelOf[c.id] = c.label; });
+
+  var filters = document.getElementById('filters');
+  var grid = document.getElementById('grid');
+  var cartCount = document.getElementById('cartCount');
+
+  function el(tag, props, children) {
+    var n = document.createElement(tag);
+    Object.keys(props || {}).forEach(function (k) {
+      if (k === 'style') n.style.cssText = props[k];
+      else if (k === 'text') n.textContent = props[k];
+      else n.setAttribute(k, props[k]);
+    });
+    (children || []).forEach(function (c) { n.appendChild(c); });
+    return n;
+  }
+
+  function renderFilters() {
+    filters.textContent = '';
+    cats.forEach(function (c) {
+      var b = el('button', { type: 'button', 'aria-pressed': String(state.cat === c.id), text: c.label });
+      b.addEventListener('click', function () { state.cat = c.id; renderFilters(); renderGrid(); });
+      filters.appendChild(b);
+    });
+  }
+
+  function renderGrid() {
+    grid.textContent = '';
+    products.filter(function (p) { return state.cat === 'all' || p.cat === state.cat; }).forEach(function (p) {
+      var shape = el('div', { class: 'shape', style: 'background:' + p.fg + ';border-radius:' + p.r });
+      var tile = el('div', { class: 'tile', 'aria-hidden': 'true', style: 'background:' + p.bg }, [shape]);
+      var info = el('div', {}, [
+        el('span', { class: 'cat', text: labelOf[p.cat] }),
+        el('h3', { text: p.name }),
+        el('span', { class: 'note', text: p.note })
+      ]);
+      var add = el('button', { type: 'button', class: 'add', text: 'أضيفي للسلة' });
+      add.addEventListener('click', function () { state.cart += 1; cartCount.textContent = state.cart; });
+      var buy = el('div', { class: 'buy' }, [el('strong', { text: '[السعر] ج.م' }), add]);
+      grid.appendChild(el('article', { class: 'card' }, [el('div', { class: 'tilebox' }, [tile]), info, buy]));
+    });
+  }
+
+  document.querySelectorAll('.coll[data-filter]').forEach(function (a) {
+    a.addEventListener('click', function () { state.cat = a.getAttribute('data-filter'); renderFilters(); renderGrid(); });
+  });
+
+  document.getElementById('joinForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('thanks').hidden = false;
+  });
+
+  renderFilters();
+  renderGrid();
+})();
+</script>
+</body>
+</html>
